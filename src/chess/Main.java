@@ -1,7 +1,14 @@
 package chess;
 
+import chess.components.GameFrame;
+
+import javax.swing.*;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Fucking Pieces of shit");
+        SwingUtilities.invokeLater(() -> {
+            GameFrame frame = new GameFrame();
+            frame.loadUI();
+        });
     }
 }
